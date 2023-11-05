@@ -3,6 +3,7 @@ from  matplotlib import pyplot
 import os
 from astropy.io import fits
 import glob
+import funsies
 
 data = fits.getdata('/Users/bostroem/Desktop/images/hubble_img.fits')
 col1 = data[20, :]
