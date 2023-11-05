@@ -4,6 +4,7 @@ import os
 from astropy.io import fits
 import glob
 
+#read in a file
 data = fits.getdata('/Users/bostroem/Desktop/images/hubble_img.fits')
 col1 = data[20, :]
 col2 = data[200, :]
@@ -33,5 +34,5 @@ mean = np.mean(col3)
 pyplot.axhline(mean)
 pyplot.legend(['Column 800', 'Mean'])
 pyplot.title('Plot of Column 800 Values and Mean')
-pyplot.xlabel('Pixels')
+pyplot.xlabel('Pixel Number')
 pyplot.ylabel('Intensity') 
