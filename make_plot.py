@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib
+from  matplotlib import pyplot
 import os
 from astropy.io import fits
 import glob
