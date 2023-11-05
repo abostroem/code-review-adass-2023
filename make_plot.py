@@ -1,8 +1,9 @@
 import numpy as np
-import matplotlib
+from  matplotlib import pyplot
 import os
 from astropy.io import fits
 import glob
+
 data = fits.getdata('/Users/bostroem/Desktop/images/hubble_img.fits')
 col1 = data[20, :]
 col2 = data[200, :]
@@ -17,6 +18,7 @@ pyplot.legend(['Column 20', 'Mean'])
 pyplot.title('Plot of Column 20 Values and Mean')
 pyplot.xlabel('Pixels')
 pyplot.ylabel('Intensity')
+
 pyplot.figure()
 pyplot.plot(np.arange(1024), col2)
 
@@ -26,6 +28,7 @@ pyplot.legend(['Column 200', 'Mean'])
 pyplot.title('Plot of Column 200 Values and Mean')
 pyplot.xlabel('Pixels')
 pyplot.ylabel('Intensity')
+
 pyplot.figure()
 pyplot.plot(np.arange(1024), col3)
 
@@ -36,3 +39,5 @@ pyplot.title('Plot of Column 800 Values and Mean')
 pyplot.xlabel('Pixels')
 pyplot.ylabel('Intensity') 
 pyplot.title('Practice')
+
+
