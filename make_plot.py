@@ -3,6 +3,7 @@ from  matplotlib import pyplot
 import os
 from astropy.io import fits
 import glob
+import funsies
 
 data = fits.getdata('/Users/bostroem/Desktop/images/hubble_img.fits')
 col1 = data[20, :]
@@ -25,6 +26,7 @@ pyplot.axhline(mean)
 pyplot.legend(['Column 200', 'Mean'])
 pyplot.title('Plot of Column 200 Values and Mean')
 pyplot.xlabel('Pixels')
+pyplot.ylabel('Intensity')
 pyplot.ylabel('Intensity')
 
 pyplot.figure()
