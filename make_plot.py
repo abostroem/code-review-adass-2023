@@ -23,7 +23,7 @@ pyplot.plot(np.arange(1024), col2)
 mean = np.mean(col2)
 pyplot.axhline(mean)
 pyplot.legend(['Column 200', 'Mean'])
-pyplot.title('Plot of Column 200 Values and Mean_edittitle')
+pyplot.title('Plot of Column 200 Values and Mean')
 pyplot.xlabel('Pixels')
 pyplot.ylabel('Intensity')
 
