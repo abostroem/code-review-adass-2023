@@ -31,7 +31,6 @@ pyplot.legend(['Column 800', 'Mean'])
 pyplot.title('Plot of Column 800 Values and Mean')
 pyplot.xlabel('Pixels')
 pyplot.ylabel('Intensity') 
-<<<<<<< HEAD
 pyplot.title('Practice')
-=======
->>>>>>> 5e268c20d62b2b802d0eef97bd4bbe5ffb3a625a
+
+
